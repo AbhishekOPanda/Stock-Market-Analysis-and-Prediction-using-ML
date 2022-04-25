@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+ background-size:100% 100%;
+            background-repeat: no-repeat;}
+form {
+width:80%;
+margin:0 auto;
+}
+label{color:black;
+align:center ;
+width:30%;
+text-align:right;
+margin-left:100px;}
+label, input {
+    /* in order to define widths */
+    display: inline-block;
+}
+label + input {
+    width: 30%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+input[type=text], input[type=password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+	text-color:white;
+    background-color: CadetBlue;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 25px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+    color:black;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 35%;
+    border-radius: 50%;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+ screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body background="pr8.jpg">
+
+<h1 style="color:black; font-family:'Trebuchet MS' ; text-align:center;">SIGN UP</h2>
+
+<form action="sign11.php" method="post" style="margin-top:45px; align:center;">
+  <div class="imgcontainer">
+    <img src="pr9.jpg"  class="avatar">
+  </div>
+    <hr>
+    <h1 style="color:black; font-family:'Trebuchet MS' ; text-align:center;">PLEASE ENTER YOUR DETAILS</h2>
+    <label for="First Name"><b>Name</b></label>
+    <input type="text"  placeholder="Enter Name" name="FirstName" required><br>
+    
+	<label for="Email"><b>Email</b></label>
+	<input type="text"  placeholder="Enter Email" name="Email" required><br>
+    
+	<label for="UserID"><b>UserID</b></label>
+    <input type="text"  placeholder="Enter ID" name="UserID" required><br>
+	
+	<label for="PhoneNumber"><b>PhoneNumber</b></label>
+    <input type="text"  placeholder="Enter Phone number" name="PhoneNumber" required><br>
+	
+	<label for="AdharNumber"><b>AdharNumber</b></label>
+    <input type="text"  placeholder="Enter Aadhar number" name="AdharNumber" required><br>
+	
+	
+	<label for="Password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="Password" required> <br>
+
+   <!-- <label for="RepeatPassword"><b>RepeatPassword</b></label>
+    <input type="password" placeholder="Repeat Password" name="RepeatPassword" required> <br> -->
+    
+    
+    <p style="color:black; margin-left:300px;">By creating an account you agree to our Terms & Privacy.</p>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn" style="width:25%;margin-left:400px">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
